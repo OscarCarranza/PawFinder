@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang "en">
+<head>
+	<meta charset="UTF-8">
+	<title>Prueba Numero 1</title>
+	<link rel = "stylesheet" href = "views/css/materialize.min.css">
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav>
+    		<div class="nav-wrapper">
+    		  	<a href="#!" class="brand-logo">Paw Finder!</a>
+    		  	      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    		  	      <ul class="right hide-on-med-and-down">
+    		  	        <li><a href=""><i class="material-icons right">home</i>Inicio</a></li>
+    		  	        <li><a href=""><i class="material-icons right">tag_faces</i>Acerca</a></li>
+    		  	        <li><a href=""><i class="material-icons right">email</i>Contáctanos</a></li>
+    		  	        <li><a href=""><i class="material-icons right">pets</i>Apadrinar/Adoptar</a></li>
+    		  	        <li><a href=""><i class="material-icons right">group</i>Voluntariado</a></li>
+    		  	        <li><a href=""><i class="material-icons right">credit_card</i>Donaciones</a></li>
+    		  	      </ul>
+    		  	      <ul class="side-nav" id="mobile-demo">
+    		  	        <li><a href="">Inicio</a></li>
+    		  	        <li><a href="">Acerca</a></li>
+    		  	        <li><a href="">Contáctanos</a></li>
+    		  	        <li><a href="">Apadrinar/Adoptar</a></li>
+    		  	        <li><a href="">Voluntariado</a></li>
+    		  	        <li><a href="">Donaciones</a></li>
+    		  	      </ul>
+    		</div>
+  		</nav>
+  </header>
+
+    <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="icon_prefix" type="text" class="validate">
+          <label for="icon_prefix">Primer Nombre</label>
+        </div>
+          <div class="input-field col s6">
+      <i class="material-icons prefix">account_circle</i>
+      <input id="last_name" type="text" class="validate">
+      <label for="last_name">Apellido</label>
+  </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">phone</i>
+          <input id="icon_telephone" type="tel" class="validate">
+          <label for="icon_telephone">Teléfono</label>
+        </div>
+        <div class="input-field col s6">
+        	<i class="material-icons prefix">email</i>
+          <input id="email" type="email" class="validate">
+          <label for="email">Correo Electrónico</label>
+        </div>
+        <div class="input-field col s12">
+        	<i class="material-icons prefix">pets</i>
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">¿Por qué te interesa ser voluntario?</label>
+        </div>
+      </div>
+    </form>
+  </div>
+
+	
+		<div class = "row">
+		   
+
+			<div class = "col m12">
+				<div class ="card-panel teal"></div>
+			</div>
+			<div class = "col m6">
+				<div class ="card-panel pink"></div>
+			</div>
+			<div class = "col m6">
+				<div class = "card-panel pink"></div>
+			</div>
+		</div>
+	</div>
+	<script>
+
+	</script>
+	
+	<script src = "views/js/jquery-1.12.4.min.js"></script>
+	<script src = "views/js/materialize.min.js"></script>
+ 	<script>
+ 		$(document).ready(function(){
+ 			    $(".button-collapse").sideNav();
+ 		});
+ 	</script>
+
+
+</body>
+</html>
