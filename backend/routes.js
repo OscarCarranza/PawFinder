@@ -2,6 +2,8 @@ var usersController = require('./controllers/usersController');
 var authController = require('./controllers/authController');
 var dogController = require('./controllers/dogController');
 var donationController = require('./controllers/donationController');
+var volunteerController = require('./controllers/volunteerController');
+
 
 
 exports.endpoints = [{method: 'GET', path: '/', config: {handler: function(request, reply){reply('API v1, DOGS')}}},
@@ -19,5 +21,9 @@ exports.endpoints = [{method: 'GET', path: '/', config: {handler: function(reque
 	{method: 'POST', path: '/v1/addDonation', config: donationController.addDonation},
 	{method: 'GET', path: '/v1/listDonations', config: donationController.listDonations},
 	{method: 'GET', path: '/v1/getDonation/{donationId}', config: donationController.getDonation},
+
+	{method: 'GET', path: '/v1/listVolunteers', config: volunteerController.listVolunteers},
+
+
 
 ];
