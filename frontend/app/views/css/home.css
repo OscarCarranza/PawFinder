@@ -46,6 +46,12 @@ h5{
   width: 350px;
 }
 
+.imagenDonate img{
+  margin-top: 10px;
+  margin-right: 10px;
+  padding-left: 150px;
+}
+
 .headerNets img{
   margin-left: 5px;
 }
@@ -63,7 +69,19 @@ h5{
   text-align: justify;;
 }
 
+.seccionD p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    text-align: justify;;
+}
+
 .cartasDogs p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    text-align: justify;
+}
+
+.adoptionText{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 17px;
     text-align: justify;
