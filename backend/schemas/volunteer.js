@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 var VolunteerSchema = new mongoose.Schema({
   name: String,
-  last_name: String.
+  last_name: String,
   tel: Number,
   email: String,
   description : String,
