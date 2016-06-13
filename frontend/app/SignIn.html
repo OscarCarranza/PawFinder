@@ -52,15 +52,6 @@
             </div>
           </div>
 
-                <div class="row s6">
-                	
-            <div class="input-field col s6">
-              <input id="email" type="email" ng-model="user.email" ng-show="!$sessionStorage.currentUser" class="validate">
-              <label for="email">Email</label>
-            </div>
-          </div>
-
-
           <div class="row s4">
           	
             <div class="input-field col s6">
@@ -73,17 +64,14 @@
   </div>
   <div class = "row">
     <div class = "offset-s4 col s2">
-  <button class="btn waves-effect waves-light" ng-show="!$sessionStorage.currentUser" type="submit" name="action" ng-click="register()">Sign Up
+  <button class="btn waves-effect waves-light" ng-show="!$sessionStorage.currentUser" type="submit" name="action" ng-click="login(user)">Log In
     <i class="material-icons right">send</i>
   </button>
 
         </div>
-<a class="btn waves-effect waves-light" ui-sref="SignIn">Sign In
+        <button class="btn waves-effect waves-light">Sign Up
     <i class="material-icons right">send</i>
-  </a>
-        <div class="row">
-                  <button type="submit" class="btn waves-effect waves-light red lighten-1" ng-click="logout()" ng-show="$sessionStorage.currentUser">Log out</button>
-                </div>
+  </button>
   </div>
 </div>
     <div class = "row">

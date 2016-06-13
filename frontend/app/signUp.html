@@ -6,7 +6,7 @@
   	<link rel = "stylesheet" href = "views/css/materialize.min.css">
   	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
-  <body>
+  <body ng-app = "PawFinder">
   	<header>
   		<nav>
       		<div class="nav-wrapper">
@@ -16,28 +16,45 @@
       		</div>
     		</nav>
     </header>
-    <div>
+    <div ng-controller = "AdminController">
   <div class = "row">
       	<form class="offset-s4 col s6">
     	  
+        <div class="row s6">
+                  
+            <div class="input-field col s6">
+              <input id="username" type="text" ng-model="user.username" ng-show="!$sessionStorage.currentUser">
+              <label for="username">Username</label>
+            </div>
+          </div>
 
                 <div class="row s6">
                 	
             <div class="input-field col s6">
-              <input id="email" type="email" class="validate">
+              <input id="email" type="email" ng-model="user.email" class="validate" ng-show="!$sessionStorage.currentUser">
               <label for="email">Email</label>
             </div>
           </div>
+
+
           <div class="row s4">
           	
             <div class="input-field col s6">
-              <input id="password" type="password" class="validate">
+              <input id="password" type="password" ng-model="user.password" class="validate" ng-show="!$sessionStorage.currentUser">
               <label for="password">Password</label>
             </div>
           </div>		   
     	</form>	
   	</div>
+    <div class = "row">
+    <div class = "offset-s5 col s2">
+  <button class="btn waves-effect waves-light" ng-show="!$sessionStorage.currentUser" type="submit" name="action" ng-click="register()">Register
+    <i class="material-icons right">send</i>
+  </button>
+        </div>
   </div>
+  </div>
+  
     <div class = "row">
 
   	
