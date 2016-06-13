@@ -3,7 +3,7 @@ var authController = require('./controllers/authController');
 var dogController = require('./controllers/dogController');
 var donationController = require('./controllers/donationController');
 var volunteerController = require('./controllers/volunteerController');
-
+var vetController = require('./controllers/vetController');
 
 
 exports.endpoints = [{method: 'GET', path: '/', config: {handler: function(request, reply){reply('API v1, DOGS')}}},
@@ -22,8 +22,12 @@ exports.endpoints = [{method: 'GET', path: '/', config: {handler: function(reque
 	{method: 'GET', path: '/v1/listDonations', config: donationController.listDonations},
 	{method: 'GET', path: '/v1/getDonation/{donationId}', config: donationController.getDonation},
 
+	{method: 'POST', path: '/v1/addVolunteer', config: volunteerController.addVolunteer},
 	{method: 'GET', path: '/v1/listVolunteers', config: volunteerController.listVolunteers},
+	{method: 'DELETE', path: '/v1/removeVolunteer/{volunteerId}', config: volunteerController.removeVolunteer},
 
-
+	{method: 'POST', path: '/v1/addVet', config: vetController.addVet},
+	{method: 'GET', path: '/v1/listVets', config: vetController.listVets},
+	{method: 'DELETE', path: '/v1/removeVet/{vetId}', config: vetController.removeVet},
 
 ];

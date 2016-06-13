@@ -81,8 +81,19 @@ h5{
     text-align: justify;
 }
 
-.adoptionText{
+.cartaLogo img{
+  margin-top: 0px;
+  margin-left: 0px;
+  border-color: black;
+}
+
+.adoptionText p{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 17px;
     text-align: justify;
+}
+.cartasVets button{
+  height: 30px;
+  line-height: 30px;
+
 }
