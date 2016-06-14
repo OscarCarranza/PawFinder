@@ -1,70 +1,121 @@
-<!DOCTYPE html>
-<html>
+ <!DOCTYPE html>
+<html lang "en">
   <head>
-    <meta charset="utf-8">
-    <title>Angular JS Scaffold app.</title>
-    <!-- inject:css -->
-    <link rel="stylesheet" href="styles/style.css">
-    <!-- endinject -->
+  	<meta charset="UTF-8">
+  	<title>Admin Sign Up PawFinder</title>
+  	<link rel = "stylesheet" href = "views/css/materialize.min.css">
+  	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="/jquery/dist/jquery.js"></script>
 
-    <!-- bower:css -->
-    <link rel="stylesheet" href="/bootstrap-css/css/bootstrap.min.css">
-    <!-- endinject -->
+    <script src="/angular/angular.js"></script>
+
+    <script src="/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <script src="/ngstorage/ngStorage.js"></script>
+    
+    <link rel="stylesheet" href="styles/materialize/css/materialize.css">
+    
+    <script src="app.js"></script>
+    
+    <script src="/jquery/dist/jquery.js"></script>
+
+    <script src="/angular/angular.js"></script>
+
+    <script src="/angular-ui-router/release/angular-ui-router.js"></script>    
+
+    <script src="/ngstorage/ngStorage.js"></script>
+ 
+    
+    <script src="scripts/services/authService.js"></script>
+    <script src="scripts/controllers/AdminController.js"></script>
   </head>
   <body ng-app="AngularScaffold">
-    <div ng-controller="NavbarController">
-      <nav class="navbar navbar-default">
-        <div class="container-fluid" >
-          <div class="navbar-header pull-right">
-            <form class="navbar-form navbar-right" role="search">
-              <div class="form-group" ng-show="!$sessionStorage.currentUser">
-                <input type="text" class="form-control" placeholder="username" ng-model="user.username">
-                <input type="password" class="form-control" placeholder="password" ng-model="user.password">
-                <button type="submit" class="btn btn-default" ng-click="login(user)">Log in</button>
-                <button type="submit" class="btn btn-default" ng-click="register()">Register!</button>
-              </div>
-              <div class="row">
-                  <button type="submit" class="btn btn-default" ng-click="logout()" ng-show="$sessionStorage.currentUser">Log out</button>
-              </div>
-            </form>
+  	<header>
+  		<nav>
+      		<div class="nav-wrapper">
+      		  	<a href="#!" class="brand-logo">Paw Finder!</a>
+      		  	      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      		  	      
+      		</div>
+    		</nav>
+    </header>
+    <div ng-controller = "AdminController">
+      <div>
+  <div class = "row">
+      	<form class="offset-s4 col s6">
+    	  
+        <div class="row s6">
+                  
+            <div class="input-field col s6">
+              <input id="username" type="text" ng-model="user.username" ng-show="!$sessionStorage.currentUser" >
+              <label for="username">Username</label>
+            </div>
           </div>
-        </div>
-      </nav>
-      <div ng-show="$sessionStorage.currentUser">
-        <h1>Bienvenido {{$sessionStorage.currentUser.username}}</h1>
-        <ul>
-          Sus roles son:
-          <li ng-repeat="role in $sessionStorage.currentUser.scope">{{role}}</li>
-        </ul>
-      </div>
-    </div>
-    <div class="container">
-      <div ui-view></div>
+
+                <div class="row s6">
+                	
+            <div class="input-field col s6">
+              <input id="email" type="email" ng-model="user.email" ng-show="!$sessionStorage.currentUser" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+
+
+          <div class="row s4">
+          	
+            <div class="input-field col s6">
+              <input id="password" type="password" ng-model="user.password" ng-show="!$sessionStorage.currentUser" class="validate">
+              <label for="password">Password</label>
+            </div>
+          </div>		   
+    	</form>	
+  	</div>
   </div>
+  <div class = "row">
+    <div class = "offset-s4 col s2">
+  <button class="btn waves-effect waves-light" ng-show="!$sessionStorage.currentUser" type="submit" name="action" ng-click="register()">Sign Up
+    <i class="material-icons right">send</i>
+  </button>
+
+        </div>
+<a class="btn waves-effect waves-light" ui-sref="SignIn">Sign In
+    <i class="material-icons right">send</i>
+  </a>
+        <div class="row">
+                  <button type="submit" class="btn waves-effect waves-light red lighten-1" ng-click="logout()" ng-show="$sessionStorage.currentUser">Log out</button>
+                </div>
+  </div>
+</div>
+    <div class = "row">
+
+  	
+
+
+
+  			<div class = "col m12">
+  				<div class ="card-panel teal"></div>
+  			</div>
+  			<div class = "col m6">
+  				<div class ="card-panel pink"></div>
+  			</div>
+  			<div class = "col m6">
+  				<div class = "card-panel pink"></div>
+  			</div>
+  		</div>
+  	<script>
+
+  	</script>
+  	
+  	<script src = "views/js/jquery-1.12.4.min.js"></script>
+  	<script src = "views/js/materialize.min.js"></script>
+   	<script>
+   		$(document).ready(function(){
+   			    $(".button-collapse").sideNav();
+   			    $('.slider').slider({full_width: true});
+   			    $('.parallax').parallax();
+   		});
+   	</script>
+
+
   </body>
-
-  <!-- bower:js -->
-
-  <script src="/jquery/dist/jquery.js"></script>
-
-  <script src="/angular/angular.js"></script>
-
-  <script src="/angular-ui-router/release/angular-ui-router.js"></script>
-
-  <script src="/bootstrap-css/js/bootstrap.min.js"></script>
-
-  <script src="/ngstorage/ngStorage.js"></script>
-
-  <script src="/bootstrap/dist/js/bootstrap.js"></script>
-
-  <!-- endinject -->
-
-  <script src="app.js"></script>
-
-  <!-- inject:js -->
-  <script src="scripts/controllers/HomeController.js"></script>
-  <script src="scripts/controllers/navbarController.js"></script>
-  <script src="scripts/services/authService.js"></script>
-  <script src="scripts/services/HomeService.js"></script>
-  <!-- endinject -->
-</html>
+  </html>

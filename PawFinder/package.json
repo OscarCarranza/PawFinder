@@ -1,0 +1,24 @@
+{
+  "name": "PawFinder",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "boom": "^3.2.1",
+    "crypto-js": "^3.1.6",
+    "gulp": "^3.9.1",
+    "gulp-debug": "^2.1.2",
+    "gulp-load-plugins": "^1.2.4",
+    "hammerjs": "^2.0.8",
+    "hapi": "^13.4.1",
+    "hapi-auth-cookie": "^6.1.1",
+    "inert": "^4.0.0",
+    "joi": "^8.4.1",
+    "jquery": "^3.0.0",
+    "main-bower-files": "^2.13.1",
+    "meteor-node-stubs": "^0.2.3",
+    "mongoose": "^4.4.20",
+    "mongoose-unique-validator": "^1.0.2"
+  }
+}
