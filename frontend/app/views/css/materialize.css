@@ -4620,6 +4620,11 @@ small {
 
 .card .card-content .card-title {
   line-height: 48px;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+  text-align: center;
 }
 
 .card .card-action {
@@ -4631,10 +4636,13 @@ small {
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
-  color: #ffab40;
+  color: #fb8c00 ;
   margin-right: 20px;
   transition: color .3s ease;
   text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover {
@@ -5244,7 +5252,7 @@ a.waves-effect .waves-ripple {
 
 .modal .modal-footer {
   border-radius: 0 0 2px 2px;
-  background-color: #fafafa;
+  background-color: #616161 ;
   padding: 4px 6px;
   height: 56px;
   width: 100%;

@@ -14,7 +14,7 @@ server.connection({
               }
 });
 
-mongoose.connect('mongodb://localhost:27017');
+mongoose.connect('mongodb://IsaacReyes:password@ds025973.mlab.com:25973/feroski');
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error'));
