@@ -4186,9 +4186,13 @@ nav ul li.active {
 
 nav ul a {
   transition: background-color .3s;
+<<<<<<< HEAD
   font-family: 'Roboto Slab', serif;
   font-weight: bold;
   font-size: 18px;
+=======
+  font-size: 1rem;
+>>>>>>> 8da67534b8811b9d2d11eb62660abf9f629c41a3
   color: #fff;
   display: inline-block;
   padding: 0 15px;
@@ -5612,8 +5616,13 @@ input[type=tel]:focus:not([readonly]),
 input[type=number]:focus:not([readonly]),
 input[type=search]:focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
+<<<<<<< HEAD
   border-bottom: 1px solid #ef6c00;
   box-shadow: 0 1px 0 0 #ef6c00;
+=======
+  border-bottom: 1px solid #26a69a;
+  box-shadow: 0 1px 0 0 #26a69a;
+>>>>>>> 8da67534b8811b9d2d11eb62660abf9f629c41a3
 }
 
 input:not([type]):focus:not([readonly]) + label,
@@ -5629,7 +5638,11 @@ input[type=tel]:focus:not([readonly]) + label,
 input[type=number]:focus:not([readonly]) + label,
 input[type=search]:focus:not([readonly]) + label,
 textarea.materialize-textarea:focus:not([readonly]) + label {
+<<<<<<< HEAD
   color: #ef6c00;
+=======
+  color: #26a69a;
+>>>>>>> 8da67534b8811b9d2d11eb62660abf9f629c41a3
 }
 
 input:not([type]).valid, input:not([type]):focus.valid,
