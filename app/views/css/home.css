@@ -97,7 +97,6 @@ h5{
   line-height: 30px;
 
 }
-<<<<<<< HEAD
 
 .news h5{
   text-align: left;
@@ -112,5 +111,13 @@ h5{
   min-width: 100%;
   min-height: 100%;
 }
-=======
->>>>>>> 8da67534b8811b9d2d11eb62660abf9f629c41a3
+
+.volunt p{
+
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 20px;
+      text-align: right;;
+      margin-top: 4px;
+      margin-left: 15px;
+      padding-left: 70px;
+}
