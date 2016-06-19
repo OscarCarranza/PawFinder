@@ -5,8 +5,8 @@ var $ = require('gulp-load-plugins')({
 	var debug = require('gulp-debug');
 var mainBowerFiles = require('main-bower-files');
 
-gulp.task('home', function() {
-	return gulp.src('./app/home.html')
+gulp.task('index', function() {
+	return gulp.src('./app/index.html')
 		.pipe($.inject(gulp.src(mainBowerFiles(), {
 			read: false
 		}, {
