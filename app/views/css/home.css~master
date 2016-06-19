@@ -97,30 +97,3 @@ h5{
   line-height: 30px;
 
 }
-
-.news h5{
-  text-align: left;
-  font-family: 'Fjalla One', sans-serif;
-}
-
-#bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-	z-index: -1;
-  min-width: 100%;
-  min-height: 100%;
-}
-<<<<<<< HEAD
-=======
-
-.volunt p{
-
-      font-family: 'Source Sans Pro', sans-serif;
-      font-size: 20px;
-      text-align: right;;
-      margin-top: 4px;
-      margin-left: 15px;
-      padding-left: 70px;
-}
->>>>>>> 1e8057b0ba0a3686fb7e23ba5e9d08a42a5031e1

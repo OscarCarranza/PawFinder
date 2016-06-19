@@ -1,121 +1,201 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang "en">
-  <head>
-  	<meta charset="UTF-8">
-  	<title>Admin Sign Up PawFinder</title>
-  	<link rel = "stylesheet" href = "views/css/materialize.min.css">
-  	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="/jquery/dist/jquery.js"></script>
+<head>
+	<meta charset="UTF-8">
+	<title>Paw Finder</title>
+	<link rel="icon" type="image/gif" href="views/images/icono.gif">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab|Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+  <link rel = "stylesheet" href = "views/css/materialize.min.css">
+	<link rel = "stylesheet" href = "views/css/materialize.css">
+	<link rel = "stylesheet" href = "views/css/home.css">
 
-    <script src="/angular/angular.js"></script>
 
-    <script src="/angular-ui-router/release/angular-ui-router.js"></script>
 
-    <script src="/ngstorage/ngStorage.js"></script>
-    
-    <link rel="stylesheet" href="styles/materialize/css/materialize.css">
-    
-    <script src="app.js"></script>
-    
-    <script src="/jquery/dist/jquery.js"></script>
+</head>
 
-    <script src="/angular/angular.js"></script>
+<body style="padding-top:10px;">
 
-    <script src="/angular-ui-router/release/angular-ui-router.js"></script>    
+	<header>
 
-    <script src="/ngstorage/ngStorage.js"></script>
- 
-    
-    <script src="scripts/services/authService.js"></script>
-    <script src="scripts/controllers/AdminController.js"></script>
-  </head>
-  <body ng-app="AngularScaffold">
-  	<header>
-  		<nav>
-      		<div class="nav-wrapper">
-      		  	<a href="#!" class="brand-logo">Paw Finder!</a>
-      		  	      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      		  	      
-      		</div>
-    		</nav>
-    </header>
-    <div ng-controller = "AdminController">
-      <div>
+		<div class="row" style="margin-bottom:0px;">
+			<div class="col s9">
+				<img clase = "responsive-img" src="views/images/poster.gif"> <!-- random image -->
+			</div>
+			<div class="col s3 headerNets" style="padding-left:115px; padding-top:90px;">
+				<a class="grey-text text-lighten-3" href="https://www.facebook.com/"><img class = "responsive-img" src="views/images/facebook.png" height="50px" width=50px></a>
+				<a class="grey-text text-lighten-3" href="https://www.instagram.com/"><img class = "responsive-img" src="views/images/instagram.png" height="50px" width=50px></a>
+				<a class="grey-text text-lighten-3" href="https://www.twitter.com/"><img class = "responsive-img" src="views/images/twitter.png" height="50px" width=50px></a>
+			</div>
+
+		</div>
+
+		<nav class="grey darken-3" style="width:1325px; margin-left:10px;">
+    		<div class="nav-wrapper black-text">
+
+						<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+						<ul class="left hide-on-med-and-down">
+
+							<li class style="padding-left:10px"><a href="index.html">Inicio</a></li>
+							<li class style="padding-left:10px"><a href="apadrinar-adoptar.html">Adopciones</a></li>
+							<li class style="padding-left:10px"><a href="voluntariado.html">Voluntariado</a></li>
+							<li class style="padding-left:10px"><a href="donaciones.html">Donaciones</a></li>
+							<li class style="padding-left:590px"> <a href="login.html" class="waves-effect waves-light btn" style="height:34.5px;">Iniciar sesión</a></li>
+
+    		  	      </ul>
+    		  	      <ul class="side-nav" id="mobile-demo">
+    		  	        <li><a href="">Inicio</a></li>
+    		  	        <li><a href="">Acerca</a></li>
+    		  	        <li><a href="">Contáctanos</a></li>
+    		  	        <li><a href="">Apadrinar/Adoptar</a></li>
+    		  	        <li><a href="">Voluntariado</a></li>
+    		  	        <li><a href="">Donaciones</a></li>
+    		  	      </ul>
+    		</div>
+  		</nav>
+  </header>
+
+	<div class = "row">
+	</div>
+	<div class = "row">
+	</div>
+
   <div class = "row">
-      	<form class="offset-s4 col s6">
-    	  
-        <div class="row s6">
-                  
-            <div class="input-field col s6">
-              <input id="username" type="text" ng-model="user.username" ng-show="!$sessionStorage.currentUser" >
-              <label for="username">Username</label>
-            </div>
-          </div>
 
-                <div class="row s6">
-                	
-            <div class="input-field col s6">
-              <input id="email" type="email" ng-model="user.email" ng-show="!$sessionStorage.currentUser" class="validate">
-              <label for="email">Email</label>
-            </div>
-          </div>
+		<div class="col s1">
+			<h2>  </h2>
+		</div>
 
+		<div class="col s7">
+			<div class="slider">
+			  <ul class="slides">
+			    <li>
+			      <img class = "responsive-img" src="views/images/img1.jpg">
+			      <div class="caption white-text text-darken-2 center-align">
 
-          <div class="row s4">
-          	
-            <div class="input-field col s6">
-              <input id="password" type="password" ng-model="user.password" ng-show="!$sessionStorage.currentUser" class="validate">
-              <label for="password">Password</label>
-            </div>
-          </div>		   
-    	</form>	
-  	</div>
-  </div>
-  <div class = "row">
-    <div class = "offset-s4 col s2">
-  <button class="btn waves-effect waves-light" ng-show="!$sessionStorage.currentUser" type="submit" name="action" ng-click="register()">Sign Up
-    <i class="material-icons right">send</i>
-  </button>
-
-        </div>
-<a class="btn waves-effect waves-light" ui-sref="SignIn">Sign In
-    <i class="material-icons right">send</i>
-  </a>
-        <div class="row">
-                  <button type="submit" class="btn waves-effect waves-light red lighten-1" ng-click="logout()" ng-show="$sessionStorage.currentUser">Log out</button>
-                </div>
-  </div>
-</div>
-    <div class = "row">
-
-  	
+			      </div>
+			    </li>
+			    <li>
+			      <img clase = "responsive-img" src="views/images/img2.jpg">
+			      <div class="caption black-text text-darken-2 left-align">
+			      </div>
+			    </li>
+			    <li>
+			      <img class = "responsive-img" src="views/images/img3.jpg">
+			      <div class="caption black-text text-darken-2 right-align">
+			      </div>
+			    </li>
+			    <li>
+			      <img class= "responsive-img" src="views/images/img4.jpg">
+			      <div class="caption black-text text-darken-2 center-align">
+			      </div>
+			    </li>
+			  </ul>
+			</div>
+		</div>
 
 
+		<div class="col s3 seccion1" style="padding-right:0px; padding-left:40px;">
+			<h5>
+			  ¿Pensando en una mascota?
+			</h5>
+			<p>
+				No les des vueltas a tu cabeza. Adopta un cachorro o un gato y dale un hogar a uno de nuestros peludos amigos.
+				Quienes estan dispuestos a darte amor, gratitud y momentos inolvidables. Si crees que exigen mucha respondabilidad o no hay suficiente
+				espacio en tu casa, no hay problema, apadrínalo o conviertete en un voluntario de nuestro refugio.
+				Adoptando un perro no cambiaras el mundo, pero sin duda cambiarás el de el.
+			</p>
+		</div>
 
-  			<div class = "col m12">
-  				<div class ="card-panel teal"></div>
-  			</div>
-  			<div class = "col m6">
-  				<div class ="card-panel pink"></div>
-  			</div>
-  			<div class = "col m6">
-  				<div class = "card-panel pink"></div>
-  			</div>
-  		</div>
-  	<script>
+	</div>
 
-  	</script>
-  	
-  	<script src = "views/js/jquery-1.12.4.min.js"></script>
-  	<script src = "views/js/materialize.min.js"></script>
-   	<script>
-   		$(document).ready(function(){
-   			    $(".button-collapse").sideNav();
-   			    $('.slider').slider({full_width: true});
-   			    $('.parallax').parallax();
-   		});
-   	</script>
+	<div style="padding-top:20px; padding-left:120px; padding-right:55px;">
+		<div class="row news">
+			<h5>Infórmate</h5>
+			<hr>
+		</div>
+		<div class="row">
+			<div class="col s4">
+			<div class="card yellow accent-2" height = "300">
+				<div class="card-content black-text">
+					<div class = "row cartaLogo">
+						<div class="col s4" style="padding-top:15px;">
+							<img clase = "responsive-img" src="views/images/boo.jpg" height="120" > <!-- random image -->
+						</div>
+						<div class="col s8" style="padding-left:10px;">
+							<h5>Romeo busca novia</h5>
+							<p><b>Llámalo:  </b>9909-4334
+							</p>
+						</div>
+					</div>
+				</div>
+			 </div>
+			</div>
+
+			<div class="col s4" style="padding-top:7px; padding-bottom:6px;">
+					<img clase = "responsive-img" src="views/images/aat.gif" height="210" width="370" style="padding-bottom:6px;"> <!-- random image -->
+			</div>
+
+			<div class="col s4" style="padding-top:7px; padding-bottom:6px;">
+					<img clase = "responsive-img" src="views/images/sabiasQue.gif" height="210" width="370" style="padding-bottom:6px;"> <!-- random image -->
+			</div>
+
+		</div>
+	</div>
+
+	<div class="row" style="margin-bottom:0px; margin-top:10px;">
+			<img class = "responsive-img" src="views/images/siluetas.jpg" height="180px" width="1400px">
+	</div>
+
+			<footer class="page-footer grey darken-2" style="padding-left:110px; padding-top:10px; margin-top:0px;">
+		          <div class="container">
+		            <div class="row foot1" style="margin-bottom: 0px;">
+									<div class="col l4 offset-10 s6 ">
+		                <h5 class="white-text">Acerca de</h5>
+		                <ul>
+											<li><a class="grey-text text-lighten-3 " href="aboutUs_mision.html">¿Quienes somos?</a></li>
+											<li><a class="grey-text text-lighten-3 " href="#!">Nuestros locales</a></li>
+											<li><a class="grey-text text-lighten-3 " href="veterinary.html">Veterinario online</a></li>
+		                </ul>
+		              </div>
+									<div class="col l4 offset-10 s6">
+		                <h5 class="white-text">Síguenos</h5>
+											<p>Contalo. Comparte esta página con tus amigos y familiares</p>
+		                <ul style="margin-left:30px;">
+											<li>
+											<div class="row socialNets" style="padding-left:30px;">
+												<a class="grey-text text-lighten-3" href="https://www.facebook.com/"><img class = "responsive-img" src="views/images/facebook.png" height="50px" width=50px></a>
+												<a class="grey-text text-lighten-3" href="https://www.instagram.com/"><img class = "responsive-img" src="views/images/instagram.png" height="50px" width=50px></a>
+												<a class="grey-text text-lighten-3" href="https://www.twitter.com/"><img class = "responsive-img" src="views/images/twitter.png" height="50px" width=50px></a>
+											</div>
+										</li>
+										</ul>
+		              </div>
+		              <div class="col l4 offset-6 s6">
+		                <h5 class="white-text">Contáctanos</h5>
+											<p> +504 ####-####<br>pawfinder_hn@gmail.com</p>
+										</div>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="footer-copyright">
+		            <div class="container">
+		            © 2016 PawFinderHN. All Rights Super Ultra Reserved.
+		            </div>
+		          </div>
+		    </footer>
+
+				<script src = "views/js/jquery-1.12.4.min.js"></script>
+				<script src = "views/js/materialize.min.js"></script>
+			 	<script>
+			 		$(document).ready(function(){
+			 			    $(".button-collapse").sideNav();
+								$('.slider').slider({full_width: true});
+			 		});
+			 	</script>
 
 
-  </body>
-  </html>
+			</body>
+		</html>
