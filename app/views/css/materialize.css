@@ -4197,6 +4197,7 @@ nav ul a {
   font-size: 18px;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-family: 'Roboto Slab', serif;
   font-weight: bold;
   font-size: 18px;
@@ -4205,6 +4206,11 @@ nav ul a {
 >>>>>>> 8da67534b8811b9d2d11eb62660abf9f629c41a3
 >>>>>>> 1e8057b0ba0a3686fb7e23ba5e9d08a42a5031e1
 >>>>>>> b3be9a6e37fc05fa22f432c9720211bff7c98dab
+=======
+  font-size: 1rem;
+>>>>>>> 8da67534b8811b9d2d11eb62660abf9f629c41a3
+>>>>>>> 1e8057b0ba0a3686fb7e23ba5e9d08a42a5031e1
+>>>>>>> 34d0bdddea91d32522c5d0ef1472a8a3ea2710a0
   color: #fff;
   display: inline-block;
   padding: 0 15px;
@@ -5633,6 +5639,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
   box-shadow: 0 1px 0 0 #ef6c00;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
   border-bottom: 1px solid #ef6c00;
   box-shadow: 0 1px 0 0 #ef6c00;
 =======
@@ -5640,6 +5647,11 @@ textarea.materialize-textarea:focus:not([readonly]) {
   box-shadow: 0 1px 0 0 #ff9800 ;
 >>>>>>> 1e8057b0ba0a3686fb7e23ba5e9d08a42a5031e1
 >>>>>>> b3be9a6e37fc05fa22f432c9720211bff7c98dab
+=======
+  border-bottom: 1px solid #ff9800 ;
+  box-shadow: 0 1px 0 0 #ff9800 ;
+>>>>>>> 1e8057b0ba0a3686fb7e23ba5e9d08a42a5031e1
+>>>>>>> 34d0bdddea91d32522c5d0ef1472a8a3ea2710a0
 }
 
 input:not([type]):focus:not([readonly]) + label,
@@ -5659,11 +5671,16 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   color: #ef6c00;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #ef6c00;
 =======
   color: #ff9800;
 >>>>>>> 1e8057b0ba0a3686fb7e23ba5e9d08a42a5031e1
 >>>>>>> b3be9a6e37fc05fa22f432c9720211bff7c98dab
+=======
+  color: #ff9800;
+>>>>>>> 1e8057b0ba0a3686fb7e23ba5e9d08a42a5031e1
+>>>>>>> 34d0bdddea91d32522c5d0ef1472a8a3ea2710a0
 }
 
 input:not([type]).valid, input:not([type]):focus.valid,
