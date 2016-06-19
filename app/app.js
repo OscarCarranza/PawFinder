@@ -11,9 +11,9 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             templateUrl: '/home.html',
             controller: 'HomeController'
         })
-        .state('SignIn', {
-            url: '/SignIn',
-            templateUrl: '/SignIn.html',
+        .state('admin_mascotas', {
+            url: '/admin_mascotas',
+            templateUrl: '/admin_mascotas.html',
             controller: 'HomeController'
         });
 }])
