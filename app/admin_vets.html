@@ -3,12 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Paw Finder</title>
-	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="icon" type="image/gif" href="views/images/icono.gif">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab|Source+Sans+Pro' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
 	<link rel = "stylesheet" href = "views/css/materialize.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+  <link rel = "stylesheet" href = "views/css/materialize.min.css">
 	<link rel = "stylesheet" href = "views/css/materialize.css">
 	<link rel = "stylesheet" href = "views/css/home.css">
 
@@ -16,14 +19,16 @@
 
 </head>
 
-<body>
+
+<body style="padding-top:10px;">
+
 	<header>
 
-		<div class="row" style="margin-bottom:0px; padding-top:10px;">
+		<div class="row" style="margin-bottom:0px;">
 			<div class="col s9">
 				<img clase = "responsive-img" src="views/images/poster.gif"> <!-- random image -->
 			</div>
-			<div class="col s3 headerNets" style="padding-left:130px; padding-top:90px;">
+			<div class="col s3 headerNets" style="padding-left:115px; padding-top:90px;">
 				<a class="grey-text text-lighten-3" href="https://www.facebook.com/"><img class = "responsive-img" src="views/images/facebook.png" height="50px" width=50px></a>
 				<a class="grey-text text-lighten-3" href="https://www.instagram.com/"><img class = "responsive-img" src="views/images/instagram.png" height="50px" width=50px></a>
 				<a class="grey-text text-lighten-3" href="https://www.twitter.com/"><img class = "responsive-img" src="views/images/twitter.png" height="50px" width=50px></a>
@@ -32,37 +37,41 @@
 		</div>
 
 		<nav class="grey darken-3" style="width:1325px; margin-left:10px;">
-				<div class="nav-wrapper black-text">
+
+
+    		<div class="nav-wrapper black-text">
 
 						<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 						<ul class="left hide-on-med-and-down">
 
-							<li class style="padding-left:10px"><a href="home.html">Inicio</a></li>
+							<li class style="padding-left:10px"><a href="index.html">Inicio</a></li>
 							<li class style="padding-left:10px"><a href="apadrinar-adoptar.html">Adopciones</a></li>
 							<li class style="padding-left:10px"><a href="voluntariado.html">Voluntariado</a></li>
 							<li class style="padding-left:10px"><a href="donaciones.html">Donaciones</a></li>
+							<li class style="padding-left:590px"> <a href="login.html" class="waves-effect waves-light btn" style="height:34.5px;">Iniciar sesión</a></li>
 
-									</ul>
-									<ul class="side-nav" id="mobile-demo">
-										<li><a href="">Inicio</a></li>
-										<li><a href="">Acerca</a></li>
-										<li><a href="">Contáctanos</a></li>
-										<li><a href="">Apadrinar/Adoptar</a></li>
-										<li><a href="">Voluntariado</a></li>
-										<li><a href="">Donaciones</a></li>
-									</ul>
-				</div>
-			</nav>
-	</header>
+    		  	      </ul>
+    		  	      <ul class="side-nav" id="mobile-demo">
+    		  	        <li><a href="">Inicio</a></li>
+    		  	        <li><a href="">Acerca</a></li>
+    		  	        <li><a href="">Contáctanos</a></li>
+    		  	        <li><a href="">Apadrinar/Adoptar</a></li>
+    		  	        <li><a href="">Voluntariado</a></li>
+    		  	        <li><a href="">Donaciones</a></li>
+    		  	      </ul>
+    		</div>
+  		</nav>
+  </header>
 
-  <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+	<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
       <a class="btn-floating btn-large red">
         <i class="large material-icons">mode_edit</i>
       </a>
       <ul>
-        <li><a class="btn-floating tooltipped blue" data-position="left" data-delay="50" data-tooltip = "Agregar Veterinario"><i class="material-icons">add</i></a></li>
+				<li><a class="btn-floating tooltipped blue" data-position="left" data-delay="50" data-tooltip =
+				"Agregar Veterinaria"><i class="material-icons">add</i></a></li>
       </ul>
-    </div>
+  </div>
 
 	<div class = "row">
 	</div>
@@ -172,7 +181,6 @@
 <div class="row" style="margin-bottom:0px; margin-top:10px;">
 		<img class = "responsive-img" src="views/images/siluetas.jpg" height="180px" width="1400px">
 </div>
-
 <footer class="page-footer grey darken-2" style="padding-left:110px; padding-top:10px; margin-top:0px;">
 				<div class="container">
 					<div class="row foot1" style="margin-bottom: 0px;">
@@ -211,14 +219,15 @@
 				</div>
 	</footer>
 
-			<script src = "views/js/jquery-1.12.4.min.js"></script>
-			<script src = "views/js/materialize.min.js"></script>
-		 	<script>
-		 		$(document).ready(function(){
-		 			    $(".button-collapse").sideNav();
-		 		});
-		 	</script>
+		<script src = "views/js/jquery-1.12.4.min.js"></script>
+		<script src = "views/js/materialize.min.js"></script>
+	 	<script>
+	 		$(document).ready(function(){
+	 			    $(".button-collapse").sideNav();
+	 		});
+	 	</script>
 
 
-		</body>
-	</html>
+
+	</body>
+</html>
