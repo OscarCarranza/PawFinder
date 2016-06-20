@@ -27,8 +27,8 @@ angular.module('AngularScaffold.Controllers')
       }
 
       $scope.redirect = function(){
-        window.location = "/admin_mascotas.html";
-      } 
+        window.location = "/admin.html";
+      }
 
       $scope.register = function(){
         var user = {username: $scope.user.username, password:  $scope.user.password, email: $scope.user.email, scope: ['admin']};
@@ -40,4 +40,25 @@ angular.module('AngularScaffold.Controllers')
           alert(err.data.error + " " + err.data.message);
         })
       }
+
+      $scope.changeTab = function(){
+        $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
+        // $(".tab").addClass("active"); // instead of this do the below
+        $(event.target).removeClass("btn-default").addClass("btn-primary");
+      }
+
+      $scope.changeTabLlenarDogs = function(){
+        $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
+        // $(".tab").addClass("active"); // instead of this do the below
+        $(event.target).removeClass("btn-default").addClass("btn-primary");
+        $scope.listDogs();
+      }
+
+      $scope.changeTabLlenarVets = function(){
+        $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
+        // $(".tab").addClass("active"); // instead of this do the below
+        $(event.target).removeClass("btn-default").addClass("btn-primary");
+        $scope.listVets();
+      }
+
   }]);
