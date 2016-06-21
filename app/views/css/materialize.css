@@ -4186,31 +4186,11 @@ nav ul li.active {
 
 nav ul a {
   transition: background-color .3s;
-<<<<<<< HEAD
   font-family: 'Roboto Slab', serif;
   font-weight: bold;
   font-size: 18px;
-=======
-<<<<<<< HEAD
-  font-family: 'Roboto Slab', serif;
-  font-weight: bold;
-  font-size: 18px;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  font-family: 'Roboto Slab', serif;
-  font-weight: bold;
-  font-size: 18px;
-=======
   font-size: 1rem;
->>>>>>> 8da67534b8811b9d2d11eb62660abf9f629c41a3
->>>>>>> 1e8057b0ba0a3686fb7e23ba5e9d08a42a5031e1
->>>>>>> b3be9a6e37fc05fa22f432c9720211bff7c98dab
-=======
   font-size: 1rem;
->>>>>>> 8da67534b8811b9d2d11eb62660abf9f629c41a3
->>>>>>> 1e8057b0ba0a3686fb7e23ba5e9d08a42a5031e1
->>>>>>> 34d0bdddea91d32522c5d0ef1472a8a3ea2710a0
   color: #fff;
   display: inline-block;
   padding: 0 15px;
@@ -5517,7 +5497,7 @@ label {
    ========================================================================== */
 /* Style Placeholders */
 ::-webkit-input-placeholder {
-  color: #d1d1d1;
+  color: #ff9800;
 }
 
 :-moz-placeholder {
@@ -5634,24 +5614,11 @@ input[type=tel]:focus:not([readonly]),
 input[type=number]:focus:not([readonly]),
 input[type=search]:focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
-<<<<<<< HEAD
   border-bottom: 1px solid #ef6c00;
   box-shadow: 0 1px 0 0 #ef6c00;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  border-bottom: 1px solid #ef6c00;
-  box-shadow: 0 1px 0 0 #ef6c00;
-=======
   border-bottom: 1px solid #ff9800 ;
   box-shadow: 0 1px 0 0 #ff9800 ;
->>>>>>> 1e8057b0ba0a3686fb7e23ba5e9d08a42a5031e1
->>>>>>> b3be9a6e37fc05fa22f432c9720211bff7c98dab
-=======
-  border-bottom: 1px solid #ff9800 ;
-  box-shadow: 0 1px 0 0 #ff9800 ;
->>>>>>> 1e8057b0ba0a3686fb7e23ba5e9d08a42a5031e1
->>>>>>> 34d0bdddea91d32522c5d0ef1472a8a3ea2710a0
+
 }
 
 input:not([type]):focus:not([readonly]) + label,
@@ -5667,20 +5634,8 @@ input[type=tel]:focus:not([readonly]) + label,
 input[type=number]:focus:not([readonly]) + label,
 input[type=search]:focus:not([readonly]) + label,
 textarea.materialize-textarea:focus:not([readonly]) + label {
-<<<<<<< HEAD
   color: #ef6c00;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  color: #ef6c00;
-=======
   color: #ff9800;
->>>>>>> 1e8057b0ba0a3686fb7e23ba5e9d08a42a5031e1
->>>>>>> b3be9a6e37fc05fa22f432c9720211bff7c98dab
-=======
-  color: #ff9800;
->>>>>>> 1e8057b0ba0a3686fb7e23ba5e9d08a42a5031e1
->>>>>>> 34d0bdddea91d32522c5d0ef1472a8a3ea2710a0
 }
 
 input:not([type]).valid, input:not([type]):focus.valid,
@@ -5708,8 +5663,8 @@ input[type=search].valid,
 input[type=search]:focus.valid,
 textarea.materialize-textarea.valid,
 textarea.materialize-textarea:focus.valid {
-  border-bottom: 1px solid #4CAF50;
-  box-shadow: 0 1px 0 0 #4CAF50;
+  border-bottom: 1px solid #ff9800
+  box-shadow: 0 1px 0 0 #ff9800 ;
 }
 
 input:not([type]).valid + label:after,
@@ -5739,7 +5694,7 @@ input[type=search]:focus.valid + label:after,
 textarea.materialize-textarea.valid + label:after,
 textarea.materialize-textarea:focus.valid + label:after {
   content: attr(data-success);
-  color: #4CAF50;
+  color: #ff9800 ;
   opacity: 1;
 }
 
@@ -5768,8 +5723,8 @@ input[type=search].invalid,
 input[type=search]:focus.invalid,
 textarea.materialize-textarea.invalid,
 textarea.materialize-textarea:focus.invalid {
-  border-bottom: 1px solid #F44336;
-  box-shadow: 0 1px 0 0 #F44336;
+  border-bottom: 1px solid #ff9800 ;
+  box-shadow: 0 1px 0 0 #ff9800 ;
 }
 
 input:not([type]).invalid + label:after,
@@ -5799,7 +5754,7 @@ input[type=search]:focus.invalid + label:after,
 textarea.materialize-textarea.invalid + label:after,
 textarea.materialize-textarea:focus.invalid + label:after {
   content: attr(data-error);
-  color: #F44336;
+  color: #ff9800 ;
   opacity: 1;
 }
 
@@ -5847,7 +5802,7 @@ textarea.materialize-textarea + label:after {
 }
 
 .input-field label {
-  color: #9e9e9e;
+  color: #ff9800 ;
   position: absolute;
   top: 0.8rem;
   left: 0.75rem;
@@ -5870,7 +5825,7 @@ textarea.materialize-textarea + label:after {
 }
 
 .input-field .prefix.active {
-  color: #26a69a;
+  color: #ff9800 ;
 }
 
 .input-field .prefix ~ input,
@@ -5914,13 +5869,13 @@ textarea.materialize-textarea + label:after {
   background-color: #fff;
   border: 0;
   box-shadow: none;
-  color: #444;
+  color: #ff9800;
 }
 
 .input-field input[type=search]:focus + label i,
 .input-field input[type=search]:focus ~ .mdi-navigation-close,
 .input-field input[type=search]:focus ~ .material-icons {
-  color: #444;
+  color: #ff9800;
 }
 
 .input-field input[type=search] + label {
