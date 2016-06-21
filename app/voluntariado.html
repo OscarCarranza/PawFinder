@@ -16,7 +16,7 @@
 
 </head>
 
-<body>
+<body style="padding-top:10px;">
 	<header>
 
 
@@ -113,7 +113,7 @@
 							<p><b>¿Te animas?<b><p>
 						</div>
 						<div class="col s6 boton">
-							<a class="waves-effect waves-light btn" style="margin-left:0px; height:40px; padding-top:2px;">Enviar solicitud</a>
+							<a class="waves-effect waves-light btn " onclick="sendEmail()" style="margin-left:0px; height:40px; padding-top:2px;">Enviar solicitud</a>
 						</div>
 					</div>
         </div>
@@ -152,7 +152,7 @@
 							</div>
 							<div class="col l4 offset-6 s6">
 								<h5 class="white-text">Contáctanos</h5>
-									<p> +504 ####-####<br>pawfinder_hn@gmail.com</p>
+									<p> +504 ####-####<br>pawfinderhn@gmail.com</p>
 								</div>
 							</div>
 						</div>
@@ -171,6 +171,20 @@
 			 			    $(".button-collapse").sideNav();
 			 		});
 			 	</script>
+				<script>
+				function sendEmail(){
+				    return $http.post('https://api.mailgun.net/v3/sandbox7b80af1f32d44d68825d081101a6a340.mailgun.org/messages', {
+				                from: "Mailgun Sandbox <pawfinderhn@gmail.com>",
+				                to: 'Oscar <pawfinderhn@gmail.com>',
+				                subject: "Propuesta voluntario",
+				                text: "Hola soy Morgan, y quiero ser voluntario",
+				            }).then(function(data){
+				                return data;
+				            }, function(error){
+				                //manage error
+				            })
+        }
+				</script>
 
 
 			</body>
