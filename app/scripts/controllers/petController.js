@@ -1,8 +1,16 @@
 angular.module('AngularScaffold.Controllers')
   .controller('petController', ['$scope', 'petService', '$sessionStorage', function ($scope, petService, $sessionStorage) {
-      $scope.title = "Petes."
+      $scope.title = "Pets."
       $scope.pets = [];
       $scope.pet = {};
+      $scope.gender;
+      console.log('si2');
+      petService.GetPets().then(function(response){
+          console.log('si');
+          $scope.pets = response.data;
+        }).catch(function(err){
+          alert(err.data.error + " " + err.data.message)
+        });
 
       $scope.GetPets = function(){
         petService.GetPets().then(function(response){
@@ -21,16 +29,15 @@ angular.module('AngularScaffold.Controllers')
       }
 
       $scope.PostPet = function(){
-        console.log('ke ondas raza');
         petService.PostPet($scope.pet).then(function(response){
+          console.log($scope.gender);
           alert("Posted to pets");
           $scope.GetPets();
         }).catch(function(err){
           alert(err.data.error + " " + err.data.message);
         });
       }
-      
-      
+
       $scope.DeletePet = function (params) {
         petService.DeletePet(params).then(function (params) {
           alert("Pet Deleted");

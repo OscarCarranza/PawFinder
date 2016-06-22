@@ -12,12 +12,35 @@
 	<link rel = "stylesheet" href = "views/css/materialize.min.css">
 	<link rel = "stylesheet" href = "views/css/materialize.css">
 	<link rel = "stylesheet" href = "views/css/home.css">
+	<script src="/jquery/dist/jquery.js"></script>
+
+    <script src="/angular/angular.js"></script>
+
+    <script src="/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <script src="/ngstorage/ngStorage.js"></script>
+    
+    <link rel="stylesheet" href="styles/materialize/css/materialize.css">
+    
+    <script src="app.js"></script>
+    
+    <script src="/jquery/dist/jquery.js"></script>
+
+    <script src="/angular/angular.js"></script>
+
+    <script src="/angular-ui-router/release/angular-ui-router.js"></script>    
+
+    <script src="/ngstorage/ngStorage.js"></script>
+ 
+    
+    <script src="scripts/services/petService.js"></script>
+    <script src="scripts/controllers/petController.js"></script>
 
 
 
 </head>
 
-<body style="padding-top:10px;">
+<body ng-app="AngularScaffold" style="padding-top:10px;">
 	<header>
 
 		<div class="row" style="margin-bottom:0px;">
@@ -76,9 +99,9 @@
 			entervista en nuestras instalaciones.</p>
 	</div>
 
-			<div class="container cartasDogs" style="padding-left:40px;">
+			<div ng-controller = "petController" class="container cartasDogs" style="padding-left:40px;">
 				<div class = "row">
-				  <div class="col m4">
+				  <div ng-repeat="pet in pets" class="col m4">
 		        <div class="card yellow accent-2" height = "300">
 		          <div class="card-content black-text">
 								<div class = "row">
@@ -86,15 +109,13 @@
 										<img clase = "responsive-img" src="views/images/manchitas.jpg" height = "100"> <!-- random image -->
 									</div>
 								<div class = "col s4">
-									<span class="card-title">Manchitas</span>
+									<span class="card-title">{{pet.name}}</span>
 								</div>
 							<div class="offset-s2 col s2">
-								<img clase = "responsive-img" src="views/images/female.gif" height = "30" > <!-- random image -->
+								<img clase = "responsive-img" src="views/images/{{pet.gender}}.gif" height = "30" > <!-- random image -->
 							</div>
 						</div>
-						<p>Manchitas era una perrita nacida en el 14 de Febrero de 2004, ella era una perrita bien linda,
-							juguetona y muy inteligente, uno piensa que hasta se creía humano! A veces ella incluso se creía superior
-							 a los demás pero siempre fue bien cariñosa con todo mundo.</p>
+						<p>{{pet.description}}</p>
 		      </div>
 		      <div class="card-action">
             <a href="#">Apadrinar</a>
@@ -103,55 +124,6 @@
 		    </div>
 		  </div>
 
-			<div class="col m4">
-				<div class="card yellow accent-2" height = "300">
-					<div class="card-content black-text">
-						<div class = "row">
-							<div class="col s4">
-								<img clase = "responsive-img" src="views/images/roco.jpg" height = "100"> <!-- random image -->
-							</div>
-						<div class = "col s4">
-							<span class="card-title">Rocco</span>
-						</div>
-						<div class="offset-s2 col s2">
-							<img clase = "responsive-img" src="views/images/male.gif" height = "30" > <!-- random image -->
-						</div>
-					</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-							exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-			  </div>
-				<div class="card-action">
-					<a href="#">Apadrinar</a>
-					<a href="#">Adoptar</a>
-				</div>
-		</div>
-	</div>
-
-	<div class="col m4">
-		<div class="card yellow accent-2" height = "300">
-			<div class="card-content black-text">
-				<div class = "row">
-					<div class="col s4">
-						<img clase = "responsive-img" src="views/images/boo.jpg" height = "100"> <!-- random image -->
-					</div>
-					<div class = "col s4">
-						<span class="card-title">Boo</span>
-							</div>
-					<div class="offset-s2 col s2">
-						<img clase = "responsive-img" src="views/images/female.gif" height = "30" > <!-- random image -->
-					</div>
-				</div>
-				<p>Manchitas era una perrita nacida en el 14 de Febrero de 2004, ella era una perrita bien linda,
-					juguetona y muy inteligente, uno piensa que hasta se creía humano! A veces ella incluso se creía superior
-					 a los demás pero siempre fue bien cariñosa con todo mundo.</p>
-			</div>
-			<div class="card-action">
-				<a href="#">Apadrinar</a>
-				<a href="#">Adoptar</a>
-			</div>
-		</div>
-		</div>
 				</div>
 			</div>
 
