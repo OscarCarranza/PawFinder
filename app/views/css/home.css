@@ -120,3 +120,47 @@ h5{
       margin-left: 15px;
       padding-left: 70px;
 }
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #ffa000 ;
+}
+
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: transparent;
+    border-top: none;
+}
+
+#tab1 {
+  display: block;
+  padding: 6px 12px;
+  border: transparent;
+  border-top: none;
+}
