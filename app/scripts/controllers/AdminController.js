@@ -5,7 +5,6 @@ angular.module('AngularScaffold.Controllers')
 
       $scope.logout = function(){
         authService.Logout().then(function(response){
-          alert('logged out correctly');
           $sessionStorage.$reset();
         }).catch(function(err){
           alert(err.data.error + " " + err.data.message);
@@ -16,7 +15,6 @@ angular.module('AngularScaffold.Controllers')
 
 
         authService.Login(user).then(function(response){
-          alert('Logged in correctly')
           $sessionStorage.currentUser = response.data;
           $scope.user = {};
           $scope.redirect();
@@ -33,7 +31,6 @@ angular.module('AngularScaffold.Controllers')
       $scope.register = function(){
         var user = {username: $scope.user.username, password:  $scope.user.password, email: $scope.user.email, scope: ['admin']};
         authService.Register(user).then(function(response){
-          alert('Registered in correctly!');
           //$scope.login({username: user.username, password: user.password});
         }).catch(function(err){
           console.log(err);

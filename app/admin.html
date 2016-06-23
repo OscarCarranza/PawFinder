@@ -43,7 +43,7 @@
 
 </head>
 
-<body ng-app="AngularScaffold" style="padding-top:10px;">
+<body ng-app="AngularScaffold" style="padding-top:10px; padding-right:10px;" >
 
 	<header>
 
@@ -72,11 +72,12 @@
 			                <input ng-model="pet.name" id="icon_prefix " type="text" class="validate">
 			                <label for="icon_prefix">Nombre</label>
 			              </div>
-			              <div class="input-field col s3">
-			                <select ng-model="gender">
+			            <div class="input-field col s3">
+			               <select ng-model="pet.gender">
 			                  <option value="Macho">Macho</option>
 			                  <option value="Hembra">Hembra</option>
 			                </select>
+						</div>
 			                <label> Género</label>
 			              </div>
 			              <div class="input-field col s3">
@@ -118,6 +119,52 @@
 			          </div>
 		</div>
 
+   <div id="modal1" class="modal">
+     <div class="modal-content">
+       <h4>Modificar Mascota</h4>
+       <div class="row" style="padding-left:0px; padding-right:0px; padding-top:20px;">
+ 			        <form class="col s12">
+ 			          <div class="row" style="margin-bottom:0px;">
+ 			          <div class="col s12">
+ 			            <div class="row">
+ 			              <div class="input-field col s6">
+ 			                <i class="material-icons prefix ">pets</i>
+ 			                <input id="icon_prefix " type="text" class="validate">
+ 			                <label for="icon_prefix">Nombre</label>
+ 			              </div>
+ 			              <div class="input-field col s3">
+ 			                <select>
+ 			                  <option value="1">Macho</option>
+ 			                  <option value="2">Hembra</option>
+ 			                </select>
+ 			                <label> Género</label>
+ 			              </div>
+ 			              <div class="input-field col s3">
+ 			                <input id="icon_prefix " type="text" class="validate">
+ 			                <label for="icon_prefix">Edad</label>
+ 			              </div>
+ 			            </div>
+ 			            <div class="row">
+ 			            <div class="input-field col s12" style="margin-top:0px;">
+ 			                <i class="material-icons prefix ">favorite</i>
+ 			                <input id="icon_prefix " type="text" class="validate">
+ 			                <label for="icon_prefix">Descripción</label>
+ 			            </div>
+ 			            </div>
+ 			            <div class="row" style="margin-top:30px; margin-left:43px;">
+ 			              <div class="col s6 boton">
+ 			                <a class="waves-effect waves-light btn yellow" style="margin-left:0px; height:40px; padding-top:2px; width:290px;" onclick="showToast2('Mascota Modificada', 3000)">Aceptar</a>
+ 			              </div>
+ 			              <div class="col s6 boton">
+ 			                <a class="waves-effect waves-light btn red" style="margin-left:0px; height:40px; padding-top:2px; width:290px;" onclick="cerrarModal1()">Cancelar</a>
+ 			              </div>
+ 			            </div>
+ 			          </div>
+           </div>
+         </div>
+       </div>
+     </div>
+
 		<div id="tab2" class="tabcontent">
 				      <table ng-controller = "petController">
         <thead>
@@ -133,6 +180,8 @@
             <td>{{pet.name}}</td>
             <td>{{pet.gender}}</td>
             <td>{{pet.age}}</td>
+            <td><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modificar</a>
+   <a class="btn red" onclick="showToast2('Mascota Eliminada', 3000)">Eliminar</a></td>
           </tr>
         </tbody>
       </table>	  	
@@ -277,7 +326,21 @@
     $(document).ready(function(){
           $(".button-collapse").sideNav();
           $('select').material_select();
+          $('.modal-trigger').leanModal();
+
     });
+    function showToast2(message, duration){
+         Materialize.toast(message, duration, 'rounded');
+      }
+
+      function cerrarModal2(){
+  			$('#modal2').closeModal();
+  		}
+      function cerrarModal1(){
+  			$('#modal1').closeModal();
+  		}
+
+
   </script>
 
 	<script>
@@ -298,6 +361,8 @@
 		$(document).ready(function() {
     $('.link:first').addClass('active');
 });
+
+
 </script>
 
 
