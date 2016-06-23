@@ -16,7 +16,7 @@
 
 </head>
 
-<body>
+<body style="padding-top:10px;">
 	<header>
 
 
@@ -41,7 +41,7 @@
 							<li class style="padding-left:10px"><a href="apadrinar-adoptar.html">Adopciones</a></li>
 							<li class style="padding-left:10px"><a href="voluntariado.html">Voluntariado</a></li>
 							<li class style="padding-left:10px"><a href="donaciones.html">Donaciones</a></li>
-							<li class style="padding-left:590px"> <a href="login.html" class="waves-effect waves-light btn" style="height:34.5px;">Iniciar sesión</a></li>
+							<li class style="padding-left:640px"> <a href="login.html" class="waves-effect waves-light btn" style="height:34.5px;">Iniciar sesión</a></li>
 									</ul>
 									<ul class="side-nav" id="mobile-demo">
 										<li><a href="">Inicio</a></li>
@@ -111,7 +111,7 @@
 							<p><b>¿Te animas?<b><p>
 						</div>
 						<div class="col s6 boton">
-							<a class="waves-effect waves-light btn" style="margin-left:0px; height:40px; padding-top:2px;">Enviar solicitud</a>
+							<a class="waves-effect waves-light btn" style="margin-left:0px; height:40px; padding-top:2px;" onclick="showToast2('Tu solicitud fue enviada', 3000)">Enviar solicitud</a>
 						</div>
 					</div>
         </div>
@@ -150,7 +150,7 @@
 							</div>
 							<div class="col l4 offset-6 s6">
 								<h5 class="white-text">Contáctanos</h5>
-									<p> +504 ####-####<br>pawfinder_hn@gmail.com</p>
+									<p> +504 ####-####<br>pawfinderhn@gmail.com</p>
 								</div>
 							</div>
 						</div>
@@ -167,7 +167,12 @@
 			 	<script>
 			 		$(document).ready(function(){
 			 			    $(".button-collapse").sideNav();
+								$('.modal-trigger').leanModal();
 			 		});
+
+					function showToast2(message, duration){
+		          Materialize.toast(message, duration, 'rounded');
+		       }
 			 	</script>
 
 

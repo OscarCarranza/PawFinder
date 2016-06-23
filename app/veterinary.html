@@ -12,12 +12,35 @@
 	<link rel = "stylesheet" href = "views/css/materialize.min.css">
 	<link rel = "stylesheet" href = "views/css/materialize.css">
 	<link rel = "stylesheet" href = "views/css/home.css">
+		<script src="/jquery/dist/jquery.js"></script>
+
+    <script src="/angular/angular.js"></script>
+
+    <script src="/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <script src="/ngstorage/ngStorage.js"></script>
+
+    <link rel="stylesheet" href="styles/materialize/css/materialize.css">
+
+    <script src="app.js"></script>
+
+    <script src="/jquery/dist/jquery.js"></script>
+
+    <script src="/angular/angular.js"></script>
+
+    <script src="/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <script src="/ngstorage/ngStorage.js"></script>
+
+
+    <script src="scripts/services/vetService.js"></script>
+    <script src="scripts/controllers/vetController.js"></script>
 
 
 
 </head>
 
-<body>
+<body ng-app = "AngularScaffold" style="padding-top:10px;">
 	<header>
 		<div class="row" style="margin-bottom:0px;">
 			<div class="col s9">
@@ -63,11 +86,11 @@
 	</div>
 
 
-			<div class="container cartasVets" style="padding-left:40px;">
+			<div ng-controller="vetController" class="container cartasVets" style="padding-left:40px;">
 				<div class = "row">
 
 
-			<div class="col m6">
+			<div ng-repeat="vet in vets"  class="col m6">
 				<div class="card grey lighten-3" height = "300">
 					<div class="card-content black-text">
 						<div class = "row cartaLogo">
@@ -75,10 +98,10 @@
                 <img clase = "responsive-img" src="views/images/logo1.gif" height="120" > <!-- random image -->
 					    </div>
               <div class="col s8" style="padding-left:10px;">
-						  <h5>Veterinaria Morgan</h5>
-              <p><b>Tel:  </b>2234-6776
-                 <br><b>E-mail:  </b>vetS@hotmail.com
-                 <br><b>Dirección:  </b>Col. Rio Grande Sur, Bloq. H.
+						  <h5>{{vet.name}}</h5>
+              <p><b>Tel:  </b>{{vet.tel_number}}
+                 <br><b>E-mail:  </b>{{vet.email}}
+                 <br><b>Dirección:  </b>{{vet.address}}
               </p>
             </div>
 			  </div>
@@ -172,7 +195,7 @@
 						</div>
 						<div class="col l4 offset-6 s6">
 							<h5 class="white-text">Contáctanos</h5>
-								<p> +504 ####-####<br>pawfinder_hn@gmail.com</p>
+								<p> +504 ####-####<br>pawfinderhn@gmail.com</p>
 							</div>
 						</div>
 					</div>

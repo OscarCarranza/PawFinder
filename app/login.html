@@ -19,20 +19,20 @@
     <script src="/angular-ui-router/release/angular-ui-router.js"></script>
 
     <script src="/ngstorage/ngStorage.js"></script>
-    
+
     <link rel="stylesheet" href="styles/materialize/css/materialize.css">
-    
+
     <script src="app.js"></script>
-    
+
     <script src="/jquery/dist/jquery.js"></script>
 
     <script src="/angular/angular.js"></script>
 
-    <script src="/angular-ui-router/release/angular-ui-router.js"></script>    
+    <script src="/angular-ui-router/release/angular-ui-router.js"></script>
 
     <script src="/ngstorage/ngStorage.js"></script>
- 
-    
+
+
     <script src="scripts/services/authService.js"></script>
     <script src="scripts/controllers/AdminController.js"></script>
 
@@ -72,11 +72,9 @@
 								</div>
 							</div>
 							<div class="row">
-								<a class="waves-effect waves-light btn" ng-show="!$sessionStorage.currentUser" type="submit" name="action" ng-click="login(user)" style="left: 168px;padding-left:100px; padding-right:110px; width:284px;">Aceptar</a>
+								<a class="waves-effect waves-light btn" onclick="showToast2('Inicio de sesión', 3000)" type="submit" name="action" ng-click="login(user)" style="left: 168px;padding-left:100px; padding-right:110px; width:284px;">Aceptar</a>
 							</div>
-							<div class="row">
-                  <button type="submit" class="btn waves-effect waves-light red lighten-1" ng-click="logout()" ng-show="$sessionStorage.currentUser">Log out</button>
-                </div>
+
 					</div>
 				</div>
 			</div>
@@ -90,7 +88,12 @@
 <script>
 	$(document).ready(function(){
 				$(".button-collapse").sideNav();
+				$('.modal-trigger').leanModal();
 	});
+
+	function showToast2(message, duration){
+			Materialize.toast(message, duration, 'rounded');
+	 }
 </script>
 
 </body>

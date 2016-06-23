@@ -1,8 +1,8 @@
 angular.module('AngularScaffold.Services').factory('authService', ['$http',
 	function($http){
 		$http.defaults.withCredentials = true;
-		//var baseUrl = 'http://localhost:8000/';
-		var baseUrl = 'https://pawfinders-backend.herokuapp.com/';
+		var baseUrl = 'http://localhost:8000/';
+		//var baseUrl = 'https://pawfinders-backend.herokuapp.com/';
 		return {
 				Logout: function(){
 					return $http.get(baseUrl + "v1/logout");
@@ -13,5 +13,7 @@ angular.module('AngularScaffold.Services').factory('authService', ['$http',
         Register: function(payload){
           return $http.post(baseUrl + "v1/register", payload);
         }
+
+				
 	    };
 }]);
