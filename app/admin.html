@@ -73,10 +73,25 @@
 			                <label for="icon_prefix">Nombre</label>
 			              </div>
 			              <div class="input-field col s3">
-			                <select ng-model="gender">
+			               <!--<select ng-model="gender">
 			                  <option value="Macho">Macho</option>
 			                  <option value="Hembra">Hembra</option>
-			                </select>
+			                </select>-->
+						     <div class="container">
+	        <div class="row">
+	            <div class="section col s4">
+	                <div input-field>
+	                    <select ng-model="select.value" material-select>
+	                        <option ng-repeat="value in select.choices">{{value}}</option>
+	                    </select>
+	                </div>
+	            </div>
+	            <div class="section col s8">
+	                <p>You selected: <b>{{select.value}}</b></p>
+	            </div>
+	        </div>
+	    </div>
+					</div>
 			                <label> Género</label>
 			              </div>
 			              <div class="input-field col s3">

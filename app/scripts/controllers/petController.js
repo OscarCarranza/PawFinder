@@ -12,6 +12,11 @@ angular.module('AngularScaffold.Controllers')
           alert(err.data.error + " " + err.data.message)
         });
 
+        $scope.select = {
+            value: "Gender",
+            choices: ["Genero", "Macho", "Hembra"]
+        };
+
       $scope.GetPets = function(){
         petService.GetPets().then(function(response){
           $scope.pets = response.data;
