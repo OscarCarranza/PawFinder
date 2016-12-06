@@ -1,9 +1,7 @@
 angular.module('AngularScaffold.Services').factory('HomeService', ['$http',
 	function($http){
 		$http.defaults.withCredentials = true;
-		//var baseUrl = 'http://localhost:8000/';
-		var baseUrl = 'https://pawfinders-backend.herokuapp.com/';
-
+		var baseUrl = 'http://localhost:8000/';
 		return {
 
 				PostIngredients: function(payload){
